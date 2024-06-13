@@ -43,21 +43,20 @@ class Dialogs {
           textColor: textColor);
 
   /// shows a toast notification using the [Toastification] package
-  void showToastSnackbar(
-    BuildContext context, {
-    AlignmentGeometry? alignment,
-    UtilsNotificationStatusType? type,
-    UtilsToastificationStyle? style,
-    required String title,
-    String? description,
-    Widget? icon,
-    Function()? onTap,
-    Color? primaryColor,
-    Color? backgroundColor,
-    bool? showProgressBar,
-    UtilsToastProgressBarTheme? progressBarTheme,
-    UtilsCloseButtonShowType? closeButtonShowType,
-  }) {
+  void showToastSnackbar(BuildContext context,
+      {AlignmentGeometry? alignment,
+      UtilsNotificationStatusType? type,
+      UtilsToastificationStyle? style,
+      required String title,
+      String? description,
+      Widget? icon,
+      Function()? onTap,
+      Color? primaryColor,
+      Color? backgroundColor,
+      bool? showProgressBar,
+      UtilsToastProgressBarTheme? progressBarTheme,
+      UtilsCloseButtonShowType? closeButtonShowType,
+      Color? textColor}) {
     toastSnackbar(
       context,
       alignment: alignment,
@@ -66,6 +65,7 @@ class Dialogs {
       title: title,
       description: description,
       icon: icon,
+      textColor: textColor,
       primaryColor: primaryColor,
       backgroundColor: backgroundColor,
       showProgressBar: showProgressBar,
