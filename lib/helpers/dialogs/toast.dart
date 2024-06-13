@@ -34,7 +34,10 @@ void toastSnackbar(
       primaryColor: primaryColor,
       backgroundColor: backgroundColor,
       title: Text(title,
-          style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold, color: textColor, fontSize: 20)),
+          style: Theme.of(context)
+              .textTheme
+              .titleSmall
+              ?.copyWith(fontWeight: FontWeight.w500, color: textColor, fontSize: 16)),
       description: description == null
           ? null
           : Text(description, style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: textColor, fontSize: 14)),
