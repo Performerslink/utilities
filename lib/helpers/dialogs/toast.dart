@@ -13,6 +13,7 @@ void toastSnackbar(
   Function()? onTap,
   Color? primaryColor,
   Color? backgroundColor,
+  Color? textColor,
   bool? showProgressBar,
   UtilsToastProgressBarTheme? progressBarTheme,
   UtilsCloseButtonShowType? closeButtonShowType,
@@ -33,10 +34,10 @@ void toastSnackbar(
       primaryColor: primaryColor,
       backgroundColor: backgroundColor,
       title: Text(title,
-          style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold, color: Colors.black)),
+          style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold, color: textColor)),
       description: description == null
           ? null
-          : Text(description, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.black)),
+          : Text(description, style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: textColor)),
       boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2), blurRadius: 10)],
       progressBarTheme: progressBarTheme,
       closeButtonShowType: closeButtonShowType_,
