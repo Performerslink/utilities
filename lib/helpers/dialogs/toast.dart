@@ -34,10 +34,10 @@ void toastSnackbar(
       primaryColor: primaryColor,
       backgroundColor: backgroundColor,
       title: Text(title,
-          style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold, color: textColor)),
+          style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold, color: textColor, fontSize: 20)),
       description: description == null
           ? null
-          : Text(description, style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: textColor)),
+          : Text(description, style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: textColor, fontSize: 14)),
       boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2), blurRadius: 10)],
       progressBarTheme: progressBarTheme,
       closeButtonShowType: closeButtonShowType_,
